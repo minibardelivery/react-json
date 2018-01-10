@@ -114,7 +114,7 @@ var Json = createClass({
 			className = 'jsonEditor' + flexboxClass
 		;
 
-		return <div className={className}>{ob}</div>;
+		return ReactDOM.div({ className: className }, ob);
 	},
 
 	getValue: function(){
