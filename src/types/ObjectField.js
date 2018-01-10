@@ -58,8 +58,8 @@ var ObjectField = createClass({
 			openHashChildren.push( this.renderAdder() );
 		}
 
-		openHash = ReactDOM.div({ key: 'o', className: 'jsonChildren'}, openHashChildren);
-		return ReactDOM.span({className: className}, [
+		openHash = React.createElement('div', { key: 'o', className: 'jsonChildren'}, openHashChildren);
+		return React.createElement('span', {className: className}, [
 			this.renderHeader(),
 			openHash
 		]);
@@ -97,7 +97,7 @@ var ObjectField = createClass({
 			fields.push( me.renderField( field, fixedFields ) );
 		});
 
-		return ReactDOM.div({ className: 'jsonGroup jsonGroup_' + groupNumber }, fields );
+		return React.createElement('div', { className: 'jsonGroup jsonGroup_' + groupNumber }, fields );
 	},
 
 	getDefaultHeader: function(){
