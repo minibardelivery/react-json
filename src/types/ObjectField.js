@@ -1,7 +1,6 @@
 'use strict';
 
 var React = require('react'),
-ReactDOM = require('react-dom'),
 	Field = require('../Field'),
 	assign = require('object-assign'),
 	CompoundFieldMixin = require('../../mixins/CompoundFieldMixin'),

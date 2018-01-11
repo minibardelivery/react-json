@@ -1,7 +1,6 @@
 'use strict';
 
 var React = require('react'),
-ReactDOM = require('react-dom'),
 	objectAssign = require('object-assign'),
 	Validation = require('./validation'),
 	TypeField = require('./TypeField'),
